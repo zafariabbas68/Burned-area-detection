@@ -1,5 +1,5 @@
 
-# 🔥 Burned Area Detector - Professional QGIS Plugin
+# 🔥 Burned Area Detector -QGIS Plugin
 
 [![QGIS Plugin](https://img.shields.io/badge/QGIS-Plugin-589632.svg)](https://plugins.qgis.org/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
