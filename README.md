@@ -43,7 +43,7 @@ A comprehensive QGIS plugin for burned area detection and analysis from Sentinel
 
 ## 🌍 **Overview**
 
-The **Burned Area Detector** plugin is a professional tool for detecting and analyzing areas affected by wildfires using Sentinel-2 satellite imagery. Developed as part of a Master's thesis at Politecnico di Milano, this plugin implements advanced algorithms based on fuzzy logic and region growing segmentation, providing accurate and reliable burned area mapping.
+The **Burned Area Detector** plugin is a professional tool for detecting and analyzing areas affected by wildfires using Sentinel-2 satellite imagery. Developed as part of GeoInformatics Engineering projects, this plugin implements advanced algorithms based on fuzzy logic and region growing segmentation, providing accurate and reliable burned area mapping.
 
 This plugin is designed for:
 - **Researchers** studying wildfire impacts
