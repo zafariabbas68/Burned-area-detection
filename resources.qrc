@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="plugins/burned_area_detector">
+        <file>images/icon.png</file>
+        <file>README.html</file>
+    </qresource>
+</RCC>

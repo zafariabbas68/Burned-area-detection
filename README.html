@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Burned Area Detector Plugin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        .version {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .note {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Burned Area Detector Plugin</h1>
+    <p class="version">Version 1.0.0</p>
+
+    <h2>Description</h2>
+    <p>This QGIS plugin detects burned areas from Sentinel-2 satellite imagery
+    using advanced fuzzy logic and region growing algorithms. It provides a
+    user-friendly interface for wildfire monitoring and post-fire damage assessment.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Automatic burned area detection from Sentinel-2 imagery</li>
+        <li>Fuzzy logic algorithm for accurate classification</li>
+        <li>Region growing segmentation to refine results</li>
+        <li>Cloud and water masking options</li>
+        <li>Configurable thresholds for fine-tuning</li>
+        <li>GeoTIFF output with georeferencing</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <ol>
+        <li>Open QGIS</li>
+        <li>Go to <strong>Plugins → Manage and Install Plugins</strong></li>
+        <li>Search for "Burned Area Detector"</li>
+        <li>Click <strong>Install Plugin</strong></li>
+    </ol>
+
+    <h2>Usage</h2>
+    <ol>
+        <li>Load your pre-fire and post-fire Sentinel-2 images in QGIS</li>
+        <li>Open the plugin from the toolbar or menu</li>
+        <li>Select the pre-fire and post-fire layers</li>
+        <li>Choose an output location for the burned area map</li>
+        <li>Adjust optional parameters if needed</li>
+        <li>Click OK to process</li>
+        <li>The result will be automatically added to your map</li>
+    </ol>
+
+    <h2>Input Requirements</h2>
+    <ul>
+        <li><strong>Format:</strong> GeoTIFF (.tif, .tiff)</li>
+        <li><strong>Sensor:</strong> Sentinel-2 Level-2A (recommended)</li>
+        <li><strong>Bands:</strong> Should include Red, NIR, SWIR bands</li>
+        <li><strong>Projection:</strong> Same projection for both images</li>
+        <li><strong>Extent:</strong> Images should cover the same area</li>
+    </ul>
+
+    <h2>Parameters</h2>
+    <ul>
+        <li><strong>Seed Threshold (0-1):</strong> Higher values are more conservative. Default: 0.9</li>
+        <li><strong>Grow Threshold (0-1):</strong> Lower values are more aggressive. Default: 0.1</li>
+        <li><strong>Mask Clouds:</strong> Remove cloud-affected pixels</li>
+        <li><strong>Mask Water:</strong> Remove water bodies</li>
+    </ul>
+
+    <h2>Output</h2>
+    <p>The plugin generates a GeoTIFF file with the burned area classification:</p>
+    <ul>
+        <li><strong>Value 1:</strong> Burned area</li>
+        <li><strong>Value 0:</strong> Unburned area</li>
+        <li><strong>Value 255:</strong> No data / masked pixels</li>
+    </ul>
+
+    <h2>Algorithm</h2>
+    <p>The detection algorithm combines multiple spectral indices (NDVI, NBR)
+    with fuzzy set theory to compute membership probabilities. A region growing
+    approach then refines the classification, balancing commission and omission errors.</p>
+
+    <h2>Citation</h2>
+    <p>If you use this plugin in your research, please cite:</p>
+    <div class="note">
+        <code>Your Name (2025). Burned Area Detector Plugin for QGIS. Version 1.0.0.</code>
+    </div>
+
+    <h2>License</h2>
+    <p>This plugin is released under the GNU General Public License v2.0 or later.</p>
+
+    <h2>Contact</h2>
+    <p>For bug reports, feature requests, or questions, please contact:</p>
+    <ul>
+        <li>Email: your.email@example.com</li>
+        <li>GitHub: https://github.com/yourusername/burned-area-detector</li>
+    </ul>
+
+    <h2>Changelog</h2>
+    <h3>Version 1.0.0 (2025-03-20)</h3>
+    <ul>
+        <li>Initial release</li>
+        <li>Basic burned area detection functionality</li>
+        <li>User-friendly dialog interface</li>
+        <li>Cloud and water masking options</li>
+        <li>Configurable thresholds</li>
+    </ul>
+</body>
+</html>
