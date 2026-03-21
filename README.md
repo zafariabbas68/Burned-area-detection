@@ -1,5 +1,5 @@
 
-# 🔥 Burned Area Detector -QGIS Plugin
+# 🔥 Burned Area Detector - Professional QGIS Plugin
 
 [![QGIS Plugin](https://img.shields.io/badge/QGIS-Plugin-589632.svg)](https://plugins.qgis.org/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
@@ -28,6 +28,7 @@ A comprehensive QGIS plugin for burned area detection and analysis from Sentinel
 ## 📖 **Table of Contents**
 
 - [Overview](#-overview)
+- [Plugin Interface](#-plugin-interface)
 - [Features](#-features)
 - [Plugin Tabs](#-plugin-tabs)
 - [Algorithm Description](#-algorithm-description)
@@ -43,13 +44,15 @@ A comprehensive QGIS plugin for burned area detection and analysis from Sentinel
 
 ## 🌍 **Overview**
 
-The **Burned Area Detector** plugin is a professional tool for detecting and analyzing areas affected by wildfires using Sentinel-2 satellite imagery. Developed as part of GeoInformatics Engineering projects for earth observations and remote Sensing Community, this plugin implements advanced algorithms based on fuzzy logic and region growing segmentation, providing accurate and reliable burned area mapping.
+The **Burned Area Detector** plugin is a professional tool for detecting and analyzing areas affected by wildfires using Sentinel-2 satellite imagery. Developed as part of a Master's thesis at Politecnico di Milano, this plugin implements advanced algorithms based on fuzzy logic and region growing segmentation, providing accurate and reliable burned area mapping.
 
-This plugin is designed for:
-- **Researchers** studying wildfire impacts
-- **Environmental agencies** monitoring forest fires
-- **Emergency responders** assessing post-fire damage
-- **GIS professionals** working with remote sensing data
+---
+
+## 🖥️ **Plugin Interface**
+
+The plugin features a professional multi-tab interface with 7 comprehensive analysis modules:
+
+![Plugin Interface](screenshots/Detection%20Tab.png)
 
 ---
 
@@ -69,17 +72,44 @@ This plugin is designed for:
 
 ## 🗂️ **Plugin Tabs**
 
-The plugin features a professional multi-tab interface:
+### 🔥 **Detection Tab**
+Main burned area detection with adjustable parameters for seed threshold, grow threshold, and max iterations.
 
-| Tab | Icon | Function |
-|-----|------|----------|
-| Detection | 🔥 | Main burned area detection with adjustable parameters |
-| Burn Severity | 📈 | USGS severity classification (Enhanced Regrowth to High Severity) |
-| Validation | 📊 | Accuracy assessment with reference data |
-| Pre-Processing | 🌍 | SCL band masking for clouds, water, and snow |
-| Change Detection | 🔄 | NDVI/NBR difference maps for recovery analysis |
-| Agreement Map | 🗺️ | Spatial visualization of classification accuracy |
-| Batch Processing | ⚡ | Automated processing of multiple image pairs |
+![Detection Tab](screenshots/Detection%20Tab.png)
+
+### 📈 **Burn Severity Tab**
+USGS severity classification with 7 levels from Enhanced Regrowth to High Severity.
+
+![Burn Severity Tab](screenshots/Burn%20Severity.png)
+
+### 📊 **Validation Tab**
+Accuracy assessment with confusion matrix, overall accuracy, commission/omission errors, and Dice coefficient.
+
+![Validation Tab](screenshots/Validation.png)
+
+### 🌍 **Pre-Processing Tab**
+SCL band masking for clouds, water, snow, and other non-burnable surfaces.
+
+![Pre-Processing Tab](screenshots/Prt-Proccessing.png)
+
+### 🔄 **Change Detection Tab**
+NDVI and NBR difference analysis for vegetation recovery monitoring.
+
+![Change Detection Tab](screenshots/Chenge%20Detection.png)
+
+### 🗺️ **Agreement Map Tab**
+Spatial visualization of classification accuracy with color-coded categories:
+- 🔴 True Positive (Correctly Burned)
+- 🔵 False Positive (Commission Error)
+- 🟡 False Negative (Omission Error)
+- 🟢 True Negative (Correctly Unburned)
+
+![Agreement Map](screenshots/Agreement%20Map.png)
+
+### ⚡ **Batch Processing Tab**
+Process multiple image pairs automatically with progress tracking.
+
+![Batch Processing](screenshots/Batch_Proccessing.png)
 
 ---
 
@@ -234,7 +264,6 @@ The validation tab calculates the following metrics:
 | **Commission Error** | FP / (TP + FP) | Overestimation error |
 | **Omission Error** | FN / (TP + FN) | Underestimation error |
 | **Dice Coefficient** | 2TP / (2TP + FP + FN) | Spatial overlap similarity (F1 score) |
-| **Kappa Coefficient** | (p0 - pe) / (1 - pe) | Inter-rater agreement |
 
 ### **Confusion Matrix**
 
@@ -304,7 +333,7 @@ Contributions are welcome! Please:
 
 ## 🙏 **Acknowledgments**
 
-- Politecnico di Milano
+- **Prof. Daniele Oxoli, PhD** - Supervisor, Politecnico di Milano
 - **CNR-IREA** - For the fuzzy algorithm research
 - **Copernicus Programme** - For Sentinel-2 data and CEMS reference products
 - **QGIS Development Team** - For the excellent GIS platform
