@@ -333,7 +333,6 @@ Contributions are welcome! Please:
 
 ## 🙏 **Acknowledgments**
 
-- **Prof. Daniele Oxoli, PhD** - Supervisor, Politecnico di Milano
 - **CNR-IREA** - For the fuzzy algorithm research
 - **Copernicus Programme** - For Sentinel-2 data and CEMS reference products
 - **QGIS Development Team** - For the excellent GIS platform
