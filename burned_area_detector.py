@@ -1,6 +1,4 @@
-"""
-Main plugin class for Burned Area Detector
-"""
+
 
 import os
 from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
