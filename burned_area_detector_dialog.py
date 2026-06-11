@@ -1,6 +1,4 @@
-"""
-Dialog class for Burned Area Detector plugin
-"""
+
 
 import os
 from qgis.PyQt import uic
