@@ -355,5 +355,5 @@ Contributions are welcome! Please:
 ---
 
 <div align="center">
-  <sub>Developed with ❤️ by Ghulam Abbas Zafari | Politecnico di Milano</sub>
+  <sub>Developed by Ghulam Abbas Zafari | Politecnico di Milano</sub>
 </div>
