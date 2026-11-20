@@ -18,7 +18,6 @@ A comprehensive QGIS plugin for burned area detection and analysis from Sentinel
 | **Author** | Ghulam Abbas Zafari |
 | **Institution** | Politecnico di Milano |
 | **Degree** | MSc in Geoinformatics Engineering |
-| **Thesis** | Development and Integration of Advanced Features in Burned Area Detector Plugin |
 | **Contact** | ghulamabbas.zafari@gmail.com |
 | **GitHub** | [zafariabbas68](https://github.com/zafariabbas68) |
 | **Portfolio** | [personal-website-gaz.onrender.com](https://personal-website-gaz.onrender.com) |
