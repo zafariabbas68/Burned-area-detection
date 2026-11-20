@@ -1,7 +1,4 @@
-# === FILE: algorithm/__init__.py ===
-"""
-Algorithm module for burned area detection
-"""
+
 
 from .burned_area_detector import BurnedAreaDetectorAlgorithm
 from .spectral_indices import SpectralIndices
